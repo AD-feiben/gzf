@@ -2,7 +2,7 @@ const axios = require('axios');
 const querystring = require('querystring');
 const config = require('../config.json');
 
-exports.notify = (params) => {
+exports.notify = ({ text, desp }) => {
   return new Promise((resolve, reject) => {
     /** https://sct.ftqq.com/forward  获取 BarkApi */
     const url = `${config.BarkApi}/${text}/${desp}`;

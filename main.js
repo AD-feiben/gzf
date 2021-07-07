@@ -40,11 +40,9 @@ async function notify(data) {
   await api.notify({
     text: `【公租房更新提醒】轮候排序号: ${PAIX}`,
     desp: `
-      轮候排序号: ${PAIX}， ${DETAIL_PAIX >= 0 ? '上升' : '下降'} ${DETAIL_PAIX}
+    轮候排序号: ${PAIX}， ${DETAIL_PAIX >= 0 ? '上升' : '下降'} ${DETAIL_PAIX}
 
-
-      户籍区排序号: ${AREA_PAIX}， ${DETAIL_AREA_PAIX >= 0 ? '上升' : '下降'} ${DETAIL_AREA_PAIX}
-    `
+    户籍区排序号: ${AREA_PAIX}， ${DETAIL_AREA_PAIX >= 0 ? '上升' : '下降'} ${DETAIL_AREA_PAIX}`
   });
 }
 
