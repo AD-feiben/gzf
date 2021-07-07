@@ -17,8 +17,10 @@
     "PAIX": 0,
     // 户籍区排序号
     "AREA_PAIX": 0,
-    // 方糖通知 http://sc.ftqq.com/?c=code 获取
-    "SCKEY": ""
+    // 方糖通知 http://sc.ftqq.com/?c=code 获取（无法使用）
+    "SCKEY": "",
+    // 方糖通知 https://sct.ftqq.com/forward 获取
+    "BarkApi": ""
 }
 ```
 

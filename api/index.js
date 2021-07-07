@@ -3,9 +3,10 @@ const querystring = require('querystring');
 const config = require('../config.json');
 
 exports.notify = (params) => {
-  const url = `https://sc.ftqq.com/${config.SCKEY}.send`;
   return new Promise((resolve, reject) => {
-    axios.get(url, { params }).then(({data}) => {
+    /** https://sct.ftqq.com/forward  获取 BarkApi */
+    const url = `${config.BarkApi}/${text}/${desp}`;
+    axios.get(encodeURI(url)).then(({data}) => {
       if (data.errno === 0) {
         return resolve(data);
       }
