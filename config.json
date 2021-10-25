@@ -5,6 +5,9 @@
   "sfz": "",
   "PAIX": 0,
   "AREA_PAIX": 0,
+  "EMAIL_SEND": "",
+  "EMAIL_PASS": "",
+  "EMAIL_TO": "",
   "SCKEY": "",
   "BarkApi": ""
 }

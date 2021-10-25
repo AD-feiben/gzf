@@ -37,7 +37,7 @@ async function notify(data) {
 
   if (OLD_PAIX === 0 && OLD_AREA_PAIX === 0) return;
 
-  await api.notify({
+  await api.sendEmail({
     text: `【公租房更新提醒】轮候排序号: ${PAIX}`,
     desp: `
     轮候排序号: ${PAIX}， ${DETAIL_PAIX >= 0 ? '上升' : '下降'} ${DETAIL_PAIX}
